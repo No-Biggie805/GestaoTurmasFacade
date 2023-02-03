@@ -115,6 +115,7 @@ int main()
         std::cout << "ID: " << (*it)->getId() << std::endl;
         std::cout << "Course: " << (*it)->getCourse() << std::endl;
       }
+      cout << "Para voltar prima 'Enter' key" << endl;
       getchar();
       break;
     }
