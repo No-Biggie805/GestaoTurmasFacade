@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "Student.h"
-#include "Course.h"
 #include <fstream>
 #include <curses.h>
 
