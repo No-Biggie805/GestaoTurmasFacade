@@ -24,9 +24,6 @@ int main()
   bool input_complete = false;
   bool while_state = false;
 
-  // std::list<Student *> students1 = list.getStudentsClass("CS", "CS101");
-
-  // while (while_state = false)
   do
   {
     std::cout << "selecione a sua opcao: \n\t[0-Adicionar Aluno\n\t1-Ver Alunos por cursos\n\t2-Ver Alunos por cursos e turma\n\t3-Adicionar Cursos\n\t4-Ver Cursos\n\t5-Limpar Lista(ficheiro .txt)\n\t10-sair]\t\nOpcao:";
@@ -127,8 +124,6 @@ int main()
     {
       // clear console
       system("clear");
-      // // Open the file for writing, by appending(extra configuration)
-      // std::ofstream file("students.txt", std::ios::app); // ios::app means we want to open new file in append mode
 
       // Get a list of students taking the "Computer Science" course and idCourse
       std::list<Student *> students1 = list.getStudentsClass("CS", "CS101");
@@ -140,16 +135,7 @@ int main()
         std::cout << "ID: " << (*it)->getId() << std::endl;
         std::cout << "Course: " << (*it)->getCourse() << std::endl;
         std::cout << "idClass: " << (*it)->getIdClass() << std::endl;
-
-        // // Now writing to file
-        // file << "Name: " << (*it)->getName() << std::endl;
-        // file << "ID: " << (*it)->getId() << std::endl;
-        // file << "Course: " << (*it)->getCourse() << std::endl;
-        // file << "IdClass: " << (*it)->getIdClass() << std::endl;
-        // file << std::endl;
       }
-      // // Now we close our file
-      // file.close();
       cout << "Para voltar prima 'Enter' key" << endl;
       getchar();
       break;
