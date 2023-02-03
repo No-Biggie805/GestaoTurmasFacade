@@ -56,8 +56,6 @@ int main()
         std::cout << std::endl;
 
         std::cout << "idClass : ";
-        // std::cin >> idClass;
-        // idClassConcatenate();//prints nothing??
         std::getline(std::cin, idClass);
         std::cout << std::endl;
 
@@ -74,12 +72,8 @@ int main()
         if (decision == 'n' && decision != 'y') // using 'n' to exit, and y other flag(works too) to keep on menu
         {
           input_complete = true;
-          // break; // end Switch case
         }
-        // else if (decision == 'y')
-        // {
-        //   input_complete = false;
-        // }
+    
       } while (!input_complete); // end of while state
 
       // Open the file for writing, by appending(extra configuration)
@@ -198,56 +192,6 @@ int main()
       getchar();
       break;
     }
-
-      // case 6:
-      // {
-      //   std::ifstream input_file("students.txt", std::ios::app);
-      //   std::list<Student *> students;
-      //   std::string line;
-
-      //   std::string nameC;
-      //   std::cout << "Enter the fullname of the student: ";
-      //   std::getline(std::cin, nameC);
-
-      //   while (std::getline(input_file, line))
-      //   {
-      //     std::string nameC = line.substr(0, line.find(','));
-      //     line = line.substr(line.find(',') + 1);
-
-      //     try
-      //     {
-      //       int id = std::stoi(line.substr(0, line.find(',')));
-      //       // std::string course = line.substr(line.find(',') + 1);
-
-      //       // // Add the student to the list
-      //       // students.push_back(new Student(nameC, id, course));
-      //     }
-      //     catch (const std::invalid_argument &e)
-      //     {
-      //       // If the conversion fails, log an error message
-      //       std::cerr << "Error: " << e.what() << '\n';
-      //       continue;
-      //     }
-      //   }
-
-      //   //   // If the student name does not match the target name, add the student to the list
-      //   //   if (name != target_name)
-      //   //   {
-      //   //     students.push_back(new Student(name, id, course));
-      //   //   }
-      //   // }
-
-      //   input_file.close();
-
-      //   std::ofstream output_file("students.txt");
-      //   for (auto it = students.begin(); it != students.end(); it++)
-      //   {
-      //     output_file << (*it)->getName() << ',' << (*it)->getId() << ',' << (*it)->getCourse() << "," << (*it)->getIdClass() << '\n';
-      //   }
-      //   output_file.close();
-
-      //   break;
-      // }
 
     case 10:
     {
